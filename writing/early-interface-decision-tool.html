@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="초기 화면을 일정, 디자인과 데이터 구조를 함께 검토하는 의사결정 도구로 활용한 경험을 정리합니다."
+    />
+    <meta name="author" content="JSIM" />
+    <meta name="theme-color" content="#123d37" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta
+      property="og:url"
+      content="https://dev-zest.github.io/writing/early-interface-decision-tool.html"
+    />
+    <meta property="og:title" content="초기 화면을 의사결정 도구로 활용하기 | JSIM" />
+    <meta
+      property="og:description"
+      content="완성된 UI보다 먼저 필요한 것은 어떤 결정을 위해 무엇을 보여줄지 정하는 일입니다."
+    />
+    <meta
+      property="og:image"
+      content="https://dev-zest.github.io/assets/profile-avatar.jpg"
+    />
+    <title>초기 화면을 의사결정 도구로 활용하기 | JSIM</title>
+    <link
+      rel="canonical"
+      href="https://dev-zest.github.io/writing/early-interface-decision-tool.html"
+    />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#article">본문으로 바로가기</a>
+    <header class="site-header" aria-label="상단 내비게이션">
+      <a class="brand" href="../index.html">JSIM</a>
+      <nav class="nav" aria-label="페이지 섹션">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#writing">Writing</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="article" class="article-page" tabindex="-1">
+      <a class="article-back" href="../index.html#writing">← Writing으로 돌아가기</a>
+
+      <article>
+        <header class="article-header">
+          <span class="article-category">Product Decision / 01</span>
+          <h1 class="article-title">초기 화면을 의사결정 도구로 활용하기</h1>
+          <p class="article-lead">
+            화면이 생기면 일정, 디자인과 데이터 구조를 같은 기준에서 이야기할 수 있습니다.
+            완성된 UI보다 먼저 필요한 것은 어떤 결정을 위해 무엇을 보여줄지 정하는 일입니다.
+          </p>
+          <time class="article-date" datetime="2026-07-13">2026.07.13</time>
+        </header>
+
+        <div class="article-body">
+          <p>
+            제품 개발에서 화면은 요구사항과 데이터 구조가 정리된 뒤 만들어지는 결과물로
+            취급되기 쉽습니다. 하지만 초기 단계의 화면은 결과를 표현하는 것보다, 아직
+            정리되지 않은 문제를 구체적으로 논의하는 데 더 유용할 수 있습니다.
+          </p>
+
+          <p>
+            문서로만 기능을 검토할 때는 같은 문장을 읽고도 서로 다른 모습을 상상하기
+            쉽습니다. 반면 완성도가 낮더라도 화면이 생기면 논의의 기준점이 만들어집니다.
+          </p>
+
+          <ul>
+            <li>이 기능이 실제로 필요한가</li>
+            <li>정해진 일정 안에서 어디까지 구현할 것인가</li>
+            <li>정보의 순서와 사용 흐름이 자연스러운가</li>
+            <li>화면을 구성하려면 어떤 데이터가 필요한가</li>
+          </ul>
+
+          <p>
+            이 질문들은 서로 분리되어 있지 않습니다. 화면의 범위가 구체화되면 구현
+            일정을 나누기 쉬워지고, 사용 흐름을 검토하면 디자인 수정이 필요해집니다.
+            디자인이 바뀌면 필요한 데이터의 형태도 달라질 수 있습니다.
+          </p>
+
+          <h2>일찍 보였을 때 함께 검토할 수 있었던 것</h2>
+
+          <p>
+            초기 화면을 빠르게 검토한 프로젝트에서는 기능의 범위와 우선순위를 비교적
+            일찍 조정할 수 있었습니다. 구현이 많이 진행되기 전에 화면을 함께 보면서
+            불필요한 기능을 줄이고, 디자인과 일정도 같은 기준에서 논의할 수 있었습니다.
+          </p>
+
+          <p>
+            특히 일정에 대한 대화가 달라졌습니다. 기능 이름만 나열할 때보다 실제 화면과
+            흐름이 보일 때 작업의 경계가 구체화됐고, 어떤 부분을 먼저 검토해야 하는지와
+            어디까지를 한 단계로 묶을지도 정하기 쉬워졌습니다.
+          </p>
+
+          <h2>화면 검토가 늦어졌을 때 생긴 제약</h2>
+
+          <p>
+            반대의 경우도 있었습니다. 어드민 화면에 대한 검토가 늦어지면서, 운영자가
+            필요한 정보 구조보다 이미 만들어진 데이터 구조를 화면에 옮기는 방향으로
+            설계가 진행됐습니다. 가져올 수 있는 데이터를 우선 배치하다 보니 정보의 순서와
+            사용 목적을 나중에 맞춰야 했습니다.
+          </p>
+
+          <p>
+            이 문제를 화면만의 문제라고 보기는 어렵습니다. 데이터 구조가 잘못됐다고
+            단정할 수도 없습니다. 다만 화면을 더 일찍 검토했다면 운영자의 사용 흐름과
+            데이터의 형태를 함께 조정할 기회가 있었을 것입니다.
+          </p>
+
+          <p class="article-note">
+            초기 화면의 목적은 빠르게 많은 UI를 만드는 것이 아니라, 변경 비용이 낮을 때
+            팀이 같은 대상을 보고 판단할 수 있게 만드는 것입니다.
+          </p>
+
+          <h2>무엇을 먼저 보여줄 것인가</h2>
+
+          <p>
+            초기 화면은 완성된 UI일 필요가 없습니다. 핵심 흐름, 주요 정보와 기능의 경계가
+            보일 정도면 일정·디자인·데이터 구조를 논의하는 데 사용할 수 있습니다.
+          </p>
+
+          <p>
+            그래서 초기 단계에서는 화면을 언제 완성할지보다, 어떤 결정을 위해 무엇을
+            먼저 보여줄지를 정하는 편이 더 중요합니다. 화면은 구현의 마지막 산출물일 수도
+            있지만, 그보다 앞서 팀의 생각을 맞추고 다음 판단을 돕는 도구가 될 수 있습니다.
+          </p>
+        </div>
+
+        <footer class="article-footer">
+          <p>만들면서 생긴 질문과 판단을 기록합니다. 상황에 따라 다른 답이 있을 수 있습니다.</p>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>
