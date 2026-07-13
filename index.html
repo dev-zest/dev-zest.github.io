@@ -1,37 +1,607 @@
-<!DOCTYPE html> <html><head>
-<title>index</title>
-<base href=".">
-<meta name="pathname" content="index.html">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
-<meta charset="UTF-8">
-<meta name="description" content="jsim - index">
-<meta property="og:title" content="index">
-<meta property="og:description" content="jsim - index">
-<meta property="og:type" content="website">
-<meta property="og:url" content="index.html">
-<meta property="og:image" content="undefined">
-<meta property="og:site_name" content="jsim">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5TQEJ4TPLP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="먼저 볼 수 있게 만들고, 바뀔 수 있게 남기는 엔지니어의 브랜드 페이지"
+    />
+    <meta name="author" content="JSIM" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#123d37" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:url" content="https://dev-zest.github.io/" />
+    <meta property="og:title" content="JSIM | Product Systems Engineer" />
+    <meta
+      property="og:description"
+      content="먼저 볼 수 있게 만들고, 바뀔 수 있게 남기는 엔지니어의 브랜드 페이지"
+    />
+    <meta
+      property="og:image"
+      content="https://dev-zest.github.io/assets/profile-avatar.jpg"
+    />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="800" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="JSIM | Product Systems Engineer" />
+    <meta
+      name="twitter:description"
+      content="먼저 볼 수 있게 만들고, 바뀔 수 있게 남기는 엔지니어의 브랜드 페이지"
+    />
+    <title>JSIM | Product Systems Engineer</title>
+    <link rel="canonical" href="https://dev-zest.github.io/" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./assets/profile-avatar.jpg" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#top">본문으로 바로가기</a>
+    <header class="site-header" aria-label="상단 내비게이션">
+      <a class="brand" href="#top">JSIM</a>
+      <nav class="nav" aria-label="페이지 섹션">
+        <a href="#scenes">Scenes</a>
+        <a href="#work">Work</a>
+        <a href="#chapters">Evidence</a>
+        <a href="#principles">Principles</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  gtag('config', 'G-5TQEJ4TPLP');
-</script>
-<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="site-lib/rss.xml"><script async="" id="webpage-script" src="site-lib/scripts/webpage.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-wasm-script" src="site-lib/scripts/graph-wasm.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-render-worker-script" src="site-lib/scripts/graph-render-worker.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="tinycolor-script" src="site-lib/scripts/tinycolor.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="pixi-script" src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.4.0/pixi.min.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="minisearch-script" src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="icon" href="site-lib/media/favicon.png"><link rel="stylesheet" href="site-lib/styles/obsidian.css"><link rel="stylesheet" href="site-lib/styles/theme.css"><link rel="preload" href="site-lib/styles/global-variable-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/global-variable-styles.css"></noscript><link rel="preload" href="site-lib/styles/main-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/main-styles.css"></noscript><style>body{--line-width:40em;--line-width-adaptive:40em;--file-line-width:40em;--sidebar-width:min(20em, 80vw);--collapse-arrow-size:11px;--tree-vertical-spacing:1.3em;--sidebar-margin:12px}.sidebar{height:100%;min-width:calc(var(--sidebar-width) + var(--divider-width-hover));max-width:calc(var(--sidebar-width) + var(--divider-width-hover));font-size:14px;z-index:10;position:relative;overflow:hidden;overflow:clip;transition:min-width ease-in-out,max-width ease-in-out;transition-duration:.2s;contain:size}#left-sidebar{left:0}#right-sidebar{right:0}.sidebar.is-collapsed{min-width:0;max-width:0}.sidebar.floating{position:absolute}.sidebar .leaf-content{height:100%;min-width:calc(var(--sidebar-width) - var(--divider-width-hover));top:0;padding:var(--sidebar-margin);padding-top:4em;line-height:var(--line-height-tight);background-color:var(--background-secondary);transition:background-color,border-right,border-left,box-shadow;transition-duration:var(--color-fade-speed);transition-timing-function:ease-in-out;position:absolute;display:flex;flex-direction:column}.sidebar:not(.is-collapsed) .leaf-content{min-width:calc(max(100%,var(--sidebar-width)) - 3px);max-width:calc(max(100%,var(--sidebar-width)) - 3px)}#left-sidebar-content{left:0;border-top-right-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l)}#right-sidebar-content{right:0;border-top-left-radius:var(--radius-l);border-bottom-left-radius:var(--radius-l)}.sidebar #left-sidebar-content,.sidebar #right-sidebar-content{contain:none!important;container-type:normal!important}.sidebar:has(.leaf-content:empty):has(.topbar-content:empty){display:none}.sidebar-topbar{height:2em;width:var(--sidebar-width);top:var(--sidebar-margin);padding-inline:var(--sidebar-margin);z-index:1;position:fixed;display:flex;align-items:center;transition:width ease-in-out;transition-duration:inherit}.sidebar.is-collapsed .sidebar-topbar{width:calc(2.3em + var(--sidebar-margin) * 2)}.sidebar .sidebar-topbar.is-collapsed{width:0}#left-sidebar .sidebar-topbar{left:0;flex-direction:row}#right-sidebar .sidebar-topbar{right:0;flex-direction:row-reverse}#left-sidebar .topbar-content{margin-right:calc(2.3em + var(--sidebar-margin));flex-direction:row}#right-sidebar .topbar-content{margin-left:calc(2.3em + var(--sidebar-margin));flex-direction:row-reverse}.topbar-content{overflow:hidden visible;overflow:clip visible;width:100%;height:100%;display:flex;align-items:center;transition:inherit}.sidebar.is-collapsed .topbar-content{width:0;transition:inherit}.clickable-icon.sidebar-collapse-icon{background-color:transparent;color:var(--icon-color-focused);padding:0!important;margin:0!important;height:100%!important;width:2.3em!important;margin-inline:0.14em!important;position:absolute}#left-sidebar .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);right:var(--sidebar-margin)}#right-sidebar .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);left:var(--sidebar-margin)}.clickable-icon.sidebar-collapse-icon svg.svg-icon{width:100%;height:100%}.feature-title{margin-left:4px;text-transform:uppercase;letter-spacing:.06em;margin-top:.75em;margin-bottom:.75em}.feature-header{display:flex;align-items:center;padding-top:0;font-size:1em;padding-left:0}body.floating-sidebars .sidebar{position:absolute}body{transition:background-color var(--color-fade-speed) ease-in-out}#layout{display:flex;flex-direction:row;height:100%;width:100%;align-items:stretch;justify-content:center}#center-content{flex-basis:100%;max-width:100%;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;transition:opacity .2s ease-in-out;contain:inline-size}.hide{opacity:0!important;transition:opacity .2s ease-in-out}#center-content>.obsidian-document{padding-left:2em;padding-right:1em;margin-bottom:0;width:100%;width:-webkit-fill-available;width:-moz-available;width:fill-available;transition:background-color var(--color-fade-speed) ease-in-out;border-top-right-radius:var(--window-radius,var(--radius-m));border-top-left-radius:var(--window-radius,var(--radius-m));overflow-x:hidden!important;overflow-y:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;contain:inline-size}#center-content>.obsidian-document>.markdown-sizer{padding-bottom:80vh!important;width:100%!important;max-width:var(--line-width)!important;flex-basis:var(--line-width)!important;transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}#center-content>.obsidian-document>div{width:100%!important;transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}#center-content>.obsidian-document:not([data-type=markdown]).embed{display:flex;padding:1em;height:100%;width:100%;align-items:center;justify-content:center}#center-content>.obsidian-document:not([data-type=markdown]).embed>*{max-width:100%;max-height:100%;object-fit:contain}:not(h1,h2,h3,h4,h5,h6):has(> :is(.math,table)){overflow-x:auto!important}#center-content>.obsidian-document:not([data-type=markdown]){overflow-x:auto;contain:content;padding:0;margin:0;height:100%}.obsidian-document[data-type=attachment]{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;width:100%}.obsidian-document[data-type=attachment]>*{outline:0;border:none;box-shadow:none}.obsidian-document[data-type=attachment] :is(img){width:100%;height:100%;max-width:90%;max-height:90%;object-fit:contain}.obsidian-document[data-type=attachment] :is(audio){width:100%;max-width:90%}.obsidian-document[data-type=attachment] :is(embed,iframe,video){width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}.canvas-wrapper>:is(.header,.footer){z-index:100;position:absolute;display:flex;justify-content:center;flex-direction:column;width:100%;align-items:center}.scroll-highlight{position:absolute;width:100%;height:100%;pointer-events:none;z-index:1000;background-color:hsla(var(--color-accent-hsl),.25);opacity:0;padding:1em;inset:50%;translate:-50% -50%;border-radius:var(--radius-s)}</style><script defer="">async function loadIncludes(){let e=document.querySelectorAll("link[itemprop='include']");for(const t of e){let e=t.getAttribute("href");try{let o="";if(e.startsWith("https:")||e.startsWith("http:")||"file:"!=window.location.protocol){const l=await fetch(e);if(!l.ok){console.log("Could not include file: "+e),t?.remove();continue}o=await l.text()}else{const t=document.querySelector(`data[id='${encodeURI(e)}']`);if(t){const e=JSON.parse(decodeURI(t.getAttribute("value")??""));o=e?.data??""}}let l=document.createRange().createContextualFragment(o),n=Array.from(l.children);for(let e of n)e?.classList?.add("hide"),e.style.transition="opacity 0.5s ease-in-out",setTimeout((()=>{e?.classList?.remove("hide")}),10);t.before(l),t.remove(),console.log("Included file: "+e)}catch(o){t?.remove(),console.log("Could not include file: "+e,o);continue}}}document.addEventListener("DOMContentLoaded",(()=>{loadIncludes()}));let isFileProtocol="file:"==location.protocol;function waitLoadScripts(e,t){let o=e.map((e=>document.getElementById(e+"-script")));!function e(l){let n=o[l],i=l+1;n?(n&&"true"!=n.getAttribute("loaded")||l<o.length&&e(i),l<o.length&&n.addEventListener("load",(()=>e(i)))):l<o.length?e(i):t()}(0)}</script></head><body class="publish css-settings-manager mod-windows is-hidden-frameless theme-light show-inline-title show-ribbon show-view-header minimal-default-light minimal-default-dark minimal-readable links-int-on links-ext-on full-width-media is-focused"><script defer="">let theme=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");"dark"==theme?(document.body.classList.add("theme-dark"),document.body.classList.remove("theme-light")):(document.body.classList.add("theme-light"),document.body.classList.remove("theme-dark")),window.innerWidth<480?document.body.classList.add("is-phone"):window.innerWidth<768?document.body.classList.add("is-tablet"):window.innerWidth<1024?document.body.classList.add("is-small-screen"):document.body.classList.add("is-large-screen")</script><div id="layout"><div id="left-content" class="leaf"><div id="left-sidebar" class="sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><div id="search-container"><div id="search-wrapper"><input enterkeyhint="search" type="search" spellcheck="false" placeholder="Search..."><div aria-label="Clear search" id="search-clear-button"></div></div></div></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content-wrapper"><div id="left-sidebar-content" class="leaf-content"><link itemprop="include" href="site-lib/html/file-tree-content.html"></div></div><script defer="">let ls = document.querySelector("#left-sidebar"); ls.classList.add("is-collapsed"); if (window.innerWidth > 768) ls.classList.remove("is-collapsed"); ls.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-left-width"));</script></div></div><div id="center-content" class="leaf"><div class="obsidian-document markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists show-properties cards" data-type="markdown"><style id="MJX-CHTML-styles"></style><pre class="frontmatter language-yaml" tabindex="0" style="display: none;"><code class="language-yaml is-loaded"><span class="token key atrule">cssclasses</span><span class="token punctuation">:</span>
-  <span class="token punctuation">-</span> cards</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre><div class="markdown-sizer"><div class="header"><h1 class="page-title heading inline-title" id="Index">Index</h1><div class="data-bar"></div></div><div class="markdown-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div><div class="el-h1 heading-wrapper"><div class="heading-children"><div class="el-ul"><ul>
-<li data-line="0" dir="auto"><a data-href="ai" href="ai/ai.html" class="internal-link" target="_self" rel="noopener nofollow">ai</a></li>
-<li data-line="1" dir="auto"><a data-href="docker" href="docker/docker.html" class="internal-link" target="_self" rel="noopener nofollow">docker</a></li>
-<li data-line="2" dir="auto"><a data-href="elixir" href="elixir/elixir.html" class="internal-link" target="_self" rel="noopener nofollow">elixir</a></li>
-<li data-line="3" dir="auto"><a data-href="git" href="git/git.html" class="internal-link" target="_self" rel="noopener nofollow">git</a></li>
-<li data-line="4" dir="auto"><a data-href="k3s" href="k3s/k3s.html" class="internal-link" target="_self" rel="noopener nofollow">k3s</a></li>
-<li data-line="5" dir="auto"><a data-href="k8s" href="k8s/k8s.html" class="internal-link" target="_self" rel="noopener nofollow">k8s</a></li>
-<li data-line="6" dir="auto"><a data-href="k9s" href="k9s/k9s.html" class="internal-link" target="_self" rel="noopener nofollow">k9s</a></li>
-</ul></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="Recent Post" dir="auto" class="heading" id="Recent_Post">Recent Post</h1><div class="heading-children"><div class="el-pre"><div class="block-language-dataview node-insert-event" dir="ltr" style="overflow-x: auto;"><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th" dir="ltr"><span>File</span><span class="dataview small-text">8</span></th><th class="table-view-th" dir="ltr"><span>file.ctime</span></th></tr></thead><tbody class="table-view-tbody"><tr><td dir="ltr"><span><a data-tooltip-position="top" aria-label="docker/docker ps.md" data-href="docker/docker ps.md" href="docker/docker-ps.html" class="internal-link" target="_self" rel="noopener nofollow">docker ps</a></span></td><td dir="ltr">11:22 오후 - 11월 11, 2024</td></tr><tr><td dir="ltr"><span><a data-tooltip-position="top" aria-label="elixir/Observer/observer.md" data-href="elixir/Observer/observer.md" href="elixir/observer/observer.html" class="internal-link" target="_self" rel="noopener nofollow">observer</a></span></td><td dir="ltr">10:44 오전 - 11월 08, 2024</td></tr><tr><td dir="ltr"><span><a data-tooltip-position="top" aria-label="elixir/Genserver/genserver.md" data-href="elixir/Genserver/genserver.md" href="elixir/genserver/genserver.html" class="internal-link" target="_self" rel="noopener nofollow">genserver</a></span></td><td dir="ltr">6:28 오후 - 11월 05, 2024</td></tr><tr><td dir="ltr"><span><a data-tooltip-position="top" aria-label="k3s/k3s 설치.md" data-href="k3s/k3s 설치.md" href="k3s/k3s-설치.html" class="internal-link" target="_self" rel="noopener nofollow">k3s 설치</a></span></td><td dir="ltr">1:29 오후 - 11월 01, 2024</td></tr><tr><td dir="ltr"><span><a data-tooltip-position="top" aria-label="git/github Action queue stuck.md" data-href="git/github Action queue stuck.md" href="git/github-action-queue-stuck.html" class="internal-link" target="_self" rel="noopener nofollow">github Action queue stuck</a></span></td><td dir="ltr">5:49 오후 - 10월 30, 2024</td></tr><tr><td dir="ltr"><span><a data-tooltip-position="top" aria-label="k8s/k8s job 완료 후 자동 삭제.md" data-href="k8s/k8s job 완료 후 자동 삭제.md" href="k8s/k8s-job-완료-후-자동-삭제.html" class="internal-link" target="_self" rel="noopener nofollow">k8s job 완료 후 자동 삭제</a></span></td><td dir="ltr">3:46 오후 - 10월 30, 2024</td></tr><tr><td dir="ltr"><span><a data-tooltip-position="top" aria-label="git/local branch 정리.md" data-href="git/local branch 정리.md" href="git/local-branch-정리.html" class="internal-link" target="_self" rel="noopener nofollow">local branch 정리</a></span></td><td dir="ltr">11:57 오전 - 10월 29, 2024</td></tr><tr><td dir="ltr"><span><a data-tooltip-position="top" aria-label="k9s/k9s binary 직접 다운로드.md" data-href="k9s/k9s binary 직접 다운로드.md" href="k9s/k9s-binary-직접-다운로드.html" class="internal-link" target="_self" rel="noopener nofollow">k9s binary 직접 다운로드</a></span></td><td dir="ltr">2:35 오후 - 10월 28, 2024</td></tr></tbody></table></div></div><div class="mod-footer mod-ui"></div></div></div><div class="footer"><div class="data-bar"></div></div></div></div></div><div id="right-content" class="leaf"><div id="right-sidebar" class="sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><label class="theme-toggle-container" for="theme-toggle-input" id=""><input class="theme-toggle-input" type="checkbox" id="theme-toggle-input"><div class="toggle-background"></div></label></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content-wrapper"><div id="right-sidebar-content" class="leaf-content"><div id="outline" class=" tree-container"><div class="feature-header"><div class="feature-title">Table Of Contents</div><button class="clickable-icon nav-action-button tree-collapse-all" aria-label="Collapse All"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg></button></div><div class="tree-item" data-depth="1"><a class="tree-item-self is-clickable" href="index.html#Index" data-path="#Index"><div class="tree-item-inner heading-link" heading-name="Index">Index</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-item-self is-clickable" href="index.html#Recent_Post" data-path="#Recent_Post"><div class="tree-item-inner heading-link" heading-name="Recent Post">Recent Post</div></a><div class="tree-item-children"></div></div></div><div class="graph-view-wrapper"><div class="feature-header"><div class="feature-title">Interactive Graph</div></div><div class="graph-view-placeholder">
-		<div class="graph-view-container">
-			<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
-			<div class="graph-icon graph-global" role="button" aria-label="Global Graph" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-git-fork"><circle cx="12" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><circle cx="18" cy="6" r="3"></circle><path d="M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9"></path><path d="M12 12v3"></path></svg></div>
-			<canvas id="graph-canvas" class="hide" width="512px" height="512px"></canvas>
-		</div>
-		</div></div></div></div><script defer="">let rs = document.querySelector("#right-sidebar"); rs.classList.add("is-collapsed"); if (window.innerWidth > 768) rs.classList.remove("is-collapsed"); rs.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-right-width"));</script></div></div></div></body></html>
+    <main id="top" tabindex="-1">
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Identity-OS / Brand Page MVP</p>
+          <h1>먼저 볼 수 있게 만들고, 바뀔 수 있게 남깁니다.</h1>
+          <p class="hero-lead">
+            아이디어가 실제 서비스가 되기까지, 사용자가 만나는 경험과 그 뒤에서
+            작동하는 데이터·배포 구조를 설계하고 구현해왔습니다.
+          </p>
+          <div class="hero-actions" aria-label="주요 링크">
+            <a class="button primary" href="#work">Work 보기</a>
+            <a class="button" href="#scenes">Evidence 보기</a>
+          </div>
+        </div>
+        <aside class="system-signature" aria-label="일하는 방식 시그니처">
+          <div class="signature-row">
+            <span class="signature-index">01</span>
+            <span class="signature-from">IDEA</span>
+            <span class="signature-arrow">→</span>
+            <strong>VISIBLE</strong>
+          </div>
+          <div class="signature-row">
+            <span class="signature-index">02</span>
+            <span class="signature-from">DOMAIN</span>
+            <span class="signature-arrow">→</span>
+            <strong>STRUCTURE</strong>
+          </div>
+          <div class="signature-row">
+            <span class="signature-index">03</span>
+            <span class="signature-from">PROTOTYPE</span>
+            <span class="signature-arrow">→</span>
+            <strong>SERVICE</strong>
+          </div>
+          <div class="signature-row">
+            <span class="signature-index">04</span>
+            <span class="signature-from">CHANGE</span>
+            <span class="signature-arrow">→</span>
+            <strong>READY</strong>
+          </div>
+        </aside>
+      </section>
+
+      <section class="about section" aria-labelledby="about-title">
+        <div class="section-label">About</div>
+        <div class="about-copy">
+          <h2 id="about-title">현실의 문제를 제품 구조로 옮기는 방식</h2>
+          <p>
+            저는 현실의 문제와 제약을 이해하고, 그 안에서 작동하는 제품 구조를
+            설계하고 구현하는 엔지니어입니다.
+          </p>
+          <p>
+            의료, 제조, 공공, AI/데이터, B2C처럼 서로 다른 도메인에서 사용자가
+            만나는 경험과 그 뒤에서 작동하는 데이터·배포 구조를 함께 다뤄왔습니다.
+          </p>
+          <p>
+            빠르게 눈으로 볼 수 있는 결과를 만들되, 이후 변경과 운영을 감당할 수
+            있도록 구조를 남기는 것을 중요하게 생각합니다.
+          </p>
+        </div>
+      </section>
+
+      <section id="scenes" class="section" aria-labelledby="scenes-title">
+        <div class="section-heading">
+          <div class="section-label">Representative Scenes</div>
+          <h2 id="scenes-title">제가 반복해서 강해졌던 세 가지 장면</h2>
+        </div>
+        <div class="scene-list">
+          <article class="scene">
+            <div class="scene-number">01</div>
+            <h3>아이디어와 서비스 사이를 연결하기</h3>
+            <p>
+              좋은 아이디어나 요구사항이 있어도 그것만으로 서비스가 되지는
+              않습니다. 사용자 화면, API, 데이터, 인증, 배포 흐름이 이어져야
+              실제 사용 가능한 제품이 됩니다.
+            </p>
+            <ul class="evidence-list" aria-label="대표 Evidence">
+              <li>Zemit</li>
+              <li>StarRuckus</li>
+              <li>Prescriptive Optimization SaaS</li>
+            </ul>
+          </article>
+
+          <article class="scene">
+            <div class="scene-number">02</div>
+            <h3>도메인의 언어를 제품 구조로 옮기기</h3>
+            <p>
+              의료, 제조, 공공, AI/데이터 프로젝트에는 각자의 언어와 제약이
+              있습니다. 중요한 것은 그 언어를 사용자가 이해하고 활용할 수 있는
+              제품 구조로 바꾸는 일입니다.
+            </p>
+            <ul class="evidence-list" aria-label="대표 Evidence">
+              <li>StarRuckus</li>
+              <li>PhenokeyOH</li>
+              <li>제조 PLC 데이터 시스템</li>
+            </ul>
+          </article>
+
+          <article class="scene">
+            <div class="scene-number">03</div>
+            <h3>먼저 보여주고, 바뀔 수 있게 남기기</h3>
+            <p>
+              모든 요구사항이 완성될 때까지 기다리면 의사결정은 늦어집니다.
+              먼저 볼 수 있는 형태를 만들고, 이후 변경을 막지 않도록 바뀔 수
+              있는 여지를 함께 남겨야 합니다.
+            </p>
+            <ul class="evidence-list" aria-label="대표 Evidence">
+              <li>Prescriptive Optimization SaaS MVP</li>
+              <li>Prescriptive Optimization SaaS Custom Template</li>
+              <li>Zemit</li>
+            </ul>
+          </article>
+        </div>
+        <div id="toolkit" class="capability-rail" aria-label="세 장면을 구현해온 기술 범위">
+          <div class="capability-label">
+            <span>Working Range</span>
+            <p>세 장면을 구현해온 기술 범위</p>
+          </div>
+          <div class="capability-item">
+            <span>BUILD</span>
+            <strong>제품을 만들고</strong>
+            <p>React · TypeScript · Kotlin · Spring Boot</p>
+          </div>
+          <div class="capability-item">
+            <span>DATA</span>
+            <strong>데이터를 연결하고</strong>
+            <p>Elixir · Python · SQL · Machbase · FastAPI</p>
+          </div>
+          <div class="capability-item">
+            <span>RUN</span>
+            <strong>운영까지 남깁니다</strong>
+            <p>Docker · Kubernetes · AWS · NCP · CI/CD</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="section" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div class="section-label">Selected Work</div>
+          <h2 id="work-title">장면을 뒷받침하는 공개 Evidence</h2>
+        </div>
+        <div class="work-list">
+          <article class="work-item">
+            <div class="work-head">
+              <p class="work-meta">Product Platform</p>
+              <h3>Zemit</h3>
+              <span class="work-evidence">CASE 01 / 05</span>
+            </div>
+            <div class="work-proof">
+              <p class="proof-label">Proves</p>
+              <p>
+                아이디어가 실제 서비스로 작동하기까지 사용자 경험, 백엔드,
+                배포 흐름을 함께 연결한 Evidence.
+              </p>
+              <ul class="proof-tags" aria-label="증명하는 패턴">
+                <li>IDEA → VISIBLE</li>
+                <li>PROTOTYPE → SERVICE</li>
+              </ul>
+            </div>
+            <div class="work-public-proof">
+              <a
+                class="work-preview"
+                href="https://new.zemit.io/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Zemit 공개 페이지 보기 (새 창)"
+              >
+                <img src="./assets/zemit-public.png" alt="Zemit 공개 페이지 캡처" />
+              </a>
+              <p class="public-proof-label">What I did</p>
+              <ul class="role-tags" aria-label="Zemit에서 맡은 역할">
+                <li>UX surface</li>
+                <li>Auth / Payment</li>
+                <li>Report flow</li>
+                <li>Deploy flow</li>
+              </ul>
+              <a href="https://new.zemit.io/" target="_blank" rel="noreferrer">
+                new.zemit.io<span class="sr-only"> (새 창)</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="work-item work-item-featured">
+            <div class="work-head">
+              <p class="work-meta">Digital Healthcare</p>
+              <h3>StarRuckus</h3>
+              <span class="work-evidence">CASE 02 / 05</span>
+            </div>
+            <div class="work-proof">
+              <p class="proof-label">Proves</p>
+              <p>
+                의료 도메인의 역할, 리포트, 운영 흐름을 사용 가능한 제품
+                구조로 옮긴 Evidence.
+              </p>
+              <ul class="proof-tags" aria-label="증명하는 패턴">
+                <li>DOMAIN → STRUCTURE</li>
+                <li>PROTOTYPE → SERVICE</li>
+              </ul>
+            </div>
+            <div class="work-public-proof">
+              <a
+                class="work-preview"
+                href="https://star-ruckus.com/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="StarRuckus 공개 페이지 보기 (새 창)"
+              >
+                <img
+                  src="./assets/starruckus-public.jpg"
+                  alt="StarRuckus 공개 페이지 캡처"
+                />
+              </a>
+              <p class="public-proof-label">What I did</p>
+              <ul class="role-tags" aria-label="StarRuckus에서 맡은 역할">
+                <li>User screen</li>
+                <li>Admin feature</li>
+                <li>Report flow</li>
+              </ul>
+              <a href="https://star-ruckus.com/" target="_blank" rel="noreferrer">
+                star-ruckus.com<span class="sr-only"> (새 창)</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="work-item">
+            <div class="work-head">
+              <p class="work-meta">AI Optimization</p>
+              <h3>Prescriptive Optimization SaaS</h3>
+              <span class="work-evidence">CASE 03 / 05</span>
+            </div>
+            <div class="work-proof">
+              <p class="proof-label">Proves</p>
+              <p>
+                불확실한 AI 최적화 아이디어를 먼저 검증 가능한 MVP로 만들고,
+                반복 가능한 SaaS 구조로 발전시킨 Evidence.
+              </p>
+              <ul class="proof-tags" aria-label="증명하는 패턴">
+                <li>IDEA → VISIBLE</li>
+                <li>CHANGE → READY</li>
+              </ul>
+            </div>
+            <div class="work-public-proof">
+              <div class="work-preview work-preview-top">
+                <img
+                  src="./assets/argmax-gdweb.png"
+                  alt="ArgMax 공개 목업 화면"
+                />
+              </div>
+              <p class="public-proof-label">What I did</p>
+              <ul class="role-tags" aria-label="Prescriptive Optimization SaaS에서 맡은 역할">
+                <li>MVP build</li>
+                <li>SaaS structure</li>
+                <li>Custom template</li>
+              </ul>
+              <a href="https://tildacorp.ai/" target="_blank" rel="noreferrer">
+                tildacorp.ai<span class="sr-only"> (새 창)</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="work-item">
+            <div class="work-head">
+              <p class="work-meta">Manufacturing Data</p>
+              <h3>제조 PLC 데이터 시스템</h3>
+              <span class="work-evidence">CASE 04 / 05</span>
+            </div>
+            <div class="work-proof">
+              <p class="proof-label">Proves</p>
+              <p>
+                레거시 DB, 시계열 데이터, 대용량 그래프 성능 제약을 실제
+                사용자가 볼 수 있는 모니터링 구조로 옮긴 Evidence.
+              </p>
+              <ul class="proof-tags" aria-label="증명하는 패턴">
+                <li>DOMAIN → STRUCTURE</li>
+                <li>CHANGE → READY</li>
+              </ul>
+            </div>
+            <div class="work-public-proof">
+              <div class="flow-map" aria-label="제조 PLC 데이터 처리 흐름">
+                <div class="thickness-map-wrap">
+                  <div class="thickness-map" aria-hidden="true">
+                    <span class="variation-mid"></span><span class="variation-cool-1"></span><span class="variation-cool-1"></span><span class="variation-cool-2"></span><span class="variation-cool-2"></span><span class="variation-mid"></span><span class="variation-mid"></span><span class="variation-warm-1"></span><span class="variation-warm-1"></span><span class="variation-warm-2"></span><span class="variation-warm-1"></span><span class="variation-mid"></span><span class="variation-cool-1"></span><span class="variation-cool-2"></span>
+                    <span class="variation-cool-2"></span><span class="variation-cool-2"></span><span class="variation-cool-1"></span><span class="variation-mid"></span><span class="variation-mid"></span><span class="variation-warm-1"></span><span class="variation-warm-2"></span><span class="variation-warm-3"></span><span class="variation-warm-2"></span><span class="variation-warm-1"></span><span class="variation-mid"></span><span class="variation-cool-1"></span><span class="variation-cool-2"></span><span class="variation-cool-3"></span>
+                    <span class="variation-cool-3"></span><span class="variation-cool-2"></span><span class="variation-cool-1"></span><span class="variation-mid"></span><span class="variation-warm-1"></span><span class="variation-warm-2"></span><span class="variation-warm-2"></span><span class="variation-warm-1"></span><span class="variation-mid"></span><span class="variation-cool-1"></span><span class="variation-cool-2"></span><span class="variation-cool-3"></span><span class="variation-cool-2"></span><span class="variation-cool-1"></span>
+                    <span class="variation-cool-2"></span><span class="variation-cool-1"></span><span class="variation-mid"></span><span class="variation-warm-1"></span><span class="variation-warm-2"></span><span class="variation-warm-3"></span><span class="variation-warm-2"></span><span class="variation-warm-1"></span><span class="variation-mid"></span><span class="variation-cool-1"></span><span class="variation-cool-2"></span><span class="variation-cool-1"></span><span class="variation-mid"></span><span class="variation-warm-1"></span>
+                    <span class="variation-cool-1"></span><span class="variation-cool-2"></span><span class="variation-cool-2"></span><span class="variation-mid"></span><span class="variation-warm-1"></span><span class="variation-warm-2"></span><span class="variation-warm-1"></span><span class="variation-mid"></span><span class="variation-cool-1"></span><span class="variation-cool-2"></span><span class="variation-cool-3"></span><span class="variation-cool-2"></span><span class="variation-cool-1"></span><span class="variation-mid"></span>
+                  </div>
+                  <div class="map-caption">
+                    <span>THICKNESS VARIATION</span>
+                    <div class="map-legend" aria-hidden="true">
+                      <span class="legend-thin">THIN</span>
+                      <span class="legend-mid">MEDIAN</span>
+                      <span class="legend-thick">THICK</span>
+                    </div>
+                  </div>
+                </div>
+                <p class="flow-route">
+                  <span>PLC data</span><i aria-hidden="true">→</i><span>Machbase</span><i aria-hidden="true">→</i><span>Legacy ERP</span><i aria-hidden="true">→</i><span>Graph UI</span>
+                </p>
+              </div>
+              <p class="public-proof-label">What I did</p>
+              <ul class="role-tags" aria-label="제조 PLC 데이터 시스템에서 맡은 역할">
+                <li>Machbase query</li>
+                <li>ODBC connector</li>
+                <li>Response cache</li>
+                <li>SSR / uPlot</li>
+              </ul>
+              <a href="https://tildacorp.ai/" target="_blank" rel="noreferrer">
+                tildacorp.ai<span class="sr-only"> (새 창)</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="work-item">
+            <div class="work-head">
+              <p class="work-meta">Cognitive Screening</p>
+              <h3>PhenokeyOH</h3>
+              <span class="work-evidence">CASE 05 / 05</span>
+            </div>
+            <div class="work-proof">
+              <p class="proof-label">Proves</p>
+              <p>
+                인지 선별 데이터를 수집, 분석 결과, 관리자 화면으로 연결하는
+                백엔드 흐름을 구성한 Evidence.
+              </p>
+              <ul class="proof-tags" aria-label="증명하는 패턴">
+                <li>DOMAIN → STRUCTURE</li>
+                <li>PROTOTYPE → SERVICE</li>
+              </ul>
+            </div>
+            <div class="work-public-proof">
+              <div class="work-preview work-preview-top">
+                <img
+                  src="./assets/phenokeyoh-results.png"
+                  alt="PhenokeyOH 인지 선별 분석 결과 화면"
+                />
+              </div>
+              <p class="public-proof-label">What I did</p>
+              <ul class="role-tags" aria-label="PhenokeyOH에서 맡은 역할">
+                <li>Raw data store</li>
+                <li>Analysis worker</li>
+                <li>Result API</li>
+                <li>Cloud deploy</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="chapters" class="chapters section" aria-labelledby="chapters-title">
+        <div class="section-heading">
+          <div class="section-label">Evidence Chapters</div>
+          <h2 id="chapters-title">프로젝트 안에서 내린 판단</h2>
+        </div>
+
+        <div class="chapter-list">
+          <article class="evidence-chapter">
+            <div class="chapter-meta">
+              <p class="chapter-index">01</p>
+              <p class="work-meta">Manufacturing Data</p>
+              <h3>제조 PLC 데이터 시스템</h3>
+            </div>
+            <div class="chapter-content">
+              <p class="chapter-lead">
+                공정에서 쌓이는 두께 데이터를, 현장이 실제로 판단할 수 있는
+                화면으로 바꾸는 일이었다.
+              </p>
+              <dl class="chapter-details">
+                <div>
+                  <dt>Situation</dt>
+                  <dd>PLC에서 저장된 시계열 데이터와 기존 ERP 흐름을 함께 다뤄야 했다.</dd>
+                </div>
+                <div>
+                  <dt>Constraint</dt>
+                  <dd>구버전 MSSQL, Machbase, 대용량 그래프 조회와 갱신이 한 경로에 얽혀 있었다.</dd>
+                </div>
+                <div>
+                  <dt>Decision</dt>
+                  <dd>Elixir/Phoenix와 ODBC로 데이터 접근 계층을 구성하고, 사전 생성 응답·SSR·uPlot로 렌더링 부담을 나눴다.</dd>
+                </div>
+                <div>
+                  <dt>Result</dt>
+                  <dd>중앙값 대비 두께 편차를 색으로 읽을 수 있는 모니터링 흐름으로 연결했다.</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="evidence-chapter">
+            <div class="chapter-meta">
+              <p class="chapter-index">02</p>
+              <p class="work-meta">Cognitive Screening</p>
+              <h3>PhenokeyOH</h3>
+            </div>
+            <div class="chapter-content">
+              <p class="chapter-lead">
+                인지 선별의 원천 응답이 분석을 거쳐 운영자가 확인하는 결과로 남아야 했다.
+              </p>
+              <dl class="chapter-details">
+                <div>
+                  <dt>Situation</dt>
+                  <dd>설문과 네 가지 인지 과제의 원천 데이터를 수집하고 분석해야 했다.</dd>
+                </div>
+                <div>
+                  <dt>Constraint</dt>
+                  <dd>분석 작업은 API 요청과 분리해야 했지만, 도메인 계약은 일관되어야 했다.</dd>
+                </div>
+                <div>
+                  <dt>Decision</dt>
+                  <dd>원천 데이터를 먼저 기록한 뒤 serverless worker가 지표를 계산하고 API가 결과를 제공하도록 나눴다.</dd>
+                </div>
+                <div>
+                  <dt>Result</dt>
+                  <dd>수집부터 분석 결과와 관리자 조회까지 이어지는 백엔드 흐름을 구성했다.</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="evidence-chapter">
+            <div class="chapter-meta">
+              <p class="chapter-index">03</p>
+              <p class="work-meta">AI Optimization</p>
+              <h3>Prescriptive Optimization SaaS</h3>
+            </div>
+            <div class="chapter-content">
+              <p class="chapter-lead">
+                불확실한 최적화 아이디어를 먼저 볼 수 있게 만들고, 반복 가능한 SaaS 구조로 키우는 과정이었다.
+              </p>
+              <dl class="chapter-details">
+                <div>
+                  <dt>Situation</dt>
+                  <dd>산업 공정 최적화 솔루션을 시장 검증용 MVP에서 시작해야 했다.</dd>
+                </div>
+                <div>
+                  <dt>Constraint</dt>
+                  <dd>모델 학습, 데이터 업로드, 인증, 배포, 고객별 요구가 동시에 커졌다.</dd>
+                </div>
+                <div>
+                  <dt>Decision</dt>
+                  <dd>MVP 이후 인프라와 서비스 경계를 확장하고, 반복 요구는 Custom Template 구조로 전환했다.</dd>
+                </div>
+                <div>
+                  <dt>Result</dt>
+                  <dd>빠른 검증 단계와 장기 운영 단계가 다른 구조를 가질 수 있다는 기준을 남겼다.</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="evidence-chapter">
+            <div class="chapter-meta">
+              <p class="chapter-index">04</p>
+              <p class="work-meta">Product Platform</p>
+              <h3>Zemit</h3>
+            </div>
+            <div class="chapter-content">
+              <p class="chapter-lead">
+                이미 서비스 중인 제품을, 이후의 기능과 운영을 감당할 수 있는 구조로 다시 정리해야 했다.
+              </p>
+              <dl class="chapter-details">
+                <div>
+                  <dt>Situation</dt>
+                  <dd>인지평가, 리포트, 결제, 실시간 기능이 하나의 소비자 플랫폼에 연결되어 있었다.</dd>
+                </div>
+                <div>
+                  <dt>Constraint</dt>
+                  <dd>인증·결제·게임·실시간 세션과 Kubernetes 운영 제약을 함께 다뤄야 했다.</dd>
+                </div>
+                <div>
+                  <dt>Decision</dt>
+                  <dd>서비스 경계를 나누고, 보안·결제 정책·다중 pod 세션·배포 조건을 각각의 책임으로 정리했다.</dd>
+                </div>
+                <div>
+                  <dt>Result</dt>
+                  <dd>사용자 경험과 백엔드, 배포 구조가 함께 변경 가능한 서비스 형태로 이어졌다.</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="evidence-chapter">
+            <div class="chapter-meta">
+              <p class="chapter-index">05</p>
+              <p class="work-meta">Digital Healthcare</p>
+              <h3>StarRuckus</h3>
+            </div>
+            <div class="chapter-content">
+              <p class="chapter-lead">
+                의료진, 관리자, 파트너, 사용자처럼 서로 다른 역할이 같은 운영 흐름 안에서 만나야 했다.
+              </p>
+              <dl class="chapter-details">
+                <div>
+                  <dt>Situation</dt>
+                  <dd>처방, 환자, 리포트, 파트너 관리, ERP 연동과 여러 웹 앱이 함께 존재했다.</dd>
+                </div>
+                <div>
+                  <dt>Constraint</dt>
+                  <dd>도메인별 요구는 다르지만 세션, 오류, 데이터 표시와 운영 추적은 일관되어야 했다.</dd>
+                </div>
+                <div>
+                  <dt>Decision</dt>
+                  <dd>백엔드의 연동·감사·생명주기 관심사를 분리하고, 프론트엔드는 공유 UI·API·리포트 경계로 묶었다.</dd>
+                </div>
+                <div>
+                  <dt>Result</dt>
+                  <dd>역할별 경험을 막지 않으면서도 유지 가능한 제품·운영 구조를 만들었다.</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="other-evidence" class="other-evidence section" aria-labelledby="other-evidence-title">
+        <div class="section-heading">
+          <div class="section-label">Other Evidence</div>
+          <h2 id="other-evidence-title">대표 장면 밖에서 쌓인 경험</h2>
+        </div>
+        <ul class="other-evidence-list">
+          <li><span>WEB / DEVOPS</span><strong>Emotiv Homepage</strong><p>다국어 런타임, 성능, 정적 배포</p></li>
+          <li><span>SECURITY / BACKEND</span><strong>Erion API Server</strong><p>보안 계층, 감사 로그, CI/CD</p></li>
+          <li><span>PUBLIC / OPTIMIZATION</span><strong>서울시 물재생센터</strong><p>공공 데이터 통합과 최적화</p></li>
+          <li><span>HEALTHCARE / DEVOPS</span><strong>분당서울대병원</strong><p>FHIR, 의료 데이터, Kubernetes</p></li>
+          <li><span>MANUFACTURING / DATA</span><strong>한솔제지 리파이너</strong><p>제조 데이터와 A/B 테스트</p></li>
+          <li><span>HEALTHCARE / TOOL</span><strong>Afib Onset Marking</strong><p>의료 연구 데이터 검토 도구</p></li>
+          <li><span>MOBILE / PRODUCT</span><strong>Softwiz 프로젝트군</strong><p>모바일 제품, 위치 데이터, 예측 알고리즘</p></li>
+        </ul>
+      </section>
+
+      <section id="principles" class="principles" aria-labelledby="principles-title">
+        <div class="principles-inner">
+          <div class="principles-heading">
+            <div class="section-label">Principles</div>
+            <h2 id="principles-title">일할 때 남기려는 것</h2>
+          </div>
+          <ol class="principle-list">
+            <li>완벽한 요구사항을 기다리지 않는다.</li>
+            <li>먼저 눈으로 볼 수 있는 것을 만든다.</li>
+            <li>빠른 구현이 이후 변경을 막지 않게 한다.</li>
+            <li>도메인의 언어를 제품 구조로 옮긴다.</li>
+            <li>운영 가능성은 나중 일이 아니라 설계 조건이다.</li>
+          </ol>
+          <footer id="contact" class="site-footer">
+            <p>복잡한 아이디어를 실제 서비스로 옮기는 일이 필요하다면, 이야기해볼 수 있습니다.</p>
+            <div class="footer-links">
+              <a href="mailto:soos7165@gmail.com">Email</a>
+              <a href="https://github.com/dev-zest" target="_blank" rel="noreferrer">
+                GitHub<span class="sr-only"> (새 창)</span>
+              </a>
+            </div>
+          </footer>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
