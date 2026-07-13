@@ -267,10 +267,56 @@ h3 {
 
 .about-copy p,
 .scene p,
+.focus-item p,
 .work-item p,
 .site-footer p {
   color: var(--muted);
   font-size: 18px;
+}
+
+.focus {
+  padding-top: 72px;
+}
+
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+
+.focus-item {
+  min-height: 330px;
+  padding: 28px;
+  background: #123d37;
+  color: #fff;
+}
+
+.focus-item span,
+.footer-kicker {
+  display: block;
+  margin-bottom: 42px;
+  color: #9fd8ce;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+}
+
+.focus-item h3 {
+  max-width: 290px;
+  font-size: 26px;
+}
+
+.focus-item p {
+  margin-bottom: 0;
+  color: rgb(255 255 255 / 70%);
+  font-size: 16px;
+}
+
+.footer-kicker {
+  margin-bottom: 10px;
 }
 
 .section-heading {
@@ -866,6 +912,14 @@ h3 {
 
   .scene-list {
     grid-template-columns: 1fr;
+  }
+
+  .focus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .focus-item {
+    min-height: 0;
   }
 
   .scene {
