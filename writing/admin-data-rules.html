@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="어드민 화면을 만들기 전에 운영 업무, 데이터의 포함·제외 기준과 예외 처리 위치를 먼저 정리해야 했던 경험을 다룹니다."
+    />
+    <meta name="author" content="JSIM" />
+    <meta name="theme-color" content="#123d37" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta
+      property="og:url"
+      content="https://dev-zest.github.io/writing/admin-data-rules.html"
+    />
+    <meta
+      property="og:title"
+      content="어드민 화면보다 먼저 정리해야 했던 데이터의 기준 | JSIM"
+    />
+    <meta
+      property="og:description"
+      content="어드민의 복잡도는 UI보다 운영 업무와 데이터 기준이 공유되지 않은 상태에서 시작되는 경우가 많았습니다."
+    />
+    <meta
+      property="og:image"
+      content="https://dev-zest.github.io/assets/profile-avatar.jpg"
+    />
+    <title>어드민 화면보다 먼저 정리해야 했던 데이터의 기준 | JSIM</title>
+    <link
+      rel="canonical"
+      href="https://dev-zest.github.io/writing/admin-data-rules.html"
+    />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#article">본문으로 바로가기</a>
+    <header class="site-header" aria-label="상단 내비게이션">
+      <a class="brand" href="../index.html">JSIM</a>
+      <nav class="nav" aria-label="페이지 섹션">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#writing">Writing</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="article" class="article-page" tabindex="-1">
+      <a class="article-back" href="../index.html#writing">← Writing으로 돌아가기</a>
+
+      <article>
+        <header class="article-header">
+          <span class="article-category">Product Operations / 02</span>
+          <h1 class="article-title">어드민 화면보다 먼저 정리해야 했던 데이터의 기준</h1>
+          <p class="article-lead">
+            필요한 데이터를 화면에 보여주는 것만으로는 운영 업무가 끝나지 않았습니다.
+            화면을 만들기 전에 무엇을 확인하고 어떤 데이터를 구분할지 함께 정할 필요가 있었습니다.
+          </p>
+          <time class="article-date" datetime="2026-07-20">2026.07.20</time>
+        </header>
+
+        <div class="article-body">
+          <p>
+            어드민은 필요한 데이터를 조회하고 상태를 확인할 수 있으면 충분하다고 생각하기
+            쉽습니다. 하지만 실제로 개발하고 운영해보면 기능과 데이터가 있어도 아쉬움이
+            남는 경우가 있었습니다.
+          </p>
+
+          <p>
+            화면에 필요한 정보를 표시했는데도 운영 과정에서 데이터베이스를 다시 조회하거나,
+            별도의 데이터를 요청하는 일이 반복됐습니다. 처음에는 조회 조건이나 기능이
+            부족한 문제라고 생각했습니다. 필터와 통계를 추가하면 해결될 것 같았습니다.
+          </p>
+
+          <p>
+            그러나 비슷한 상황이 반복되면서 화면에 무엇을 더 추가할지보다, 운영자가 이
+            화면에서 어떤 업무를 끝내야 하는지를 먼저 확인할 필요가 있다는 생각이
+            들었습니다.
+          </p>
+
+          <h2>데이터를 보여줬지만 업무가 끝나지 않았던 이유</h2>
+
+          <p>
+            어드민 화면을 검토할 때는 사용자 목록, 가입 상태, 결제 이력과 같은 데이터를
+            먼저 나열하는 경우가 많았습니다. 필요한 데이터가 화면에 있으면 운영자가 알아서
+            활용할 수 있을 것이라고 생각하기도 했습니다.
+          </p>
+
+          <p>
+            하지만 사용자 상태가 보여도 문의의 원인을 판단하는 데 필요한 이력이 빠져 있다면
+            다시 데이터를 찾아야 했습니다. 통계가 있어도 어떤 데이터가 포함됐는지 알 수
+            없다면 숫자를 그대로 사용하기 어려웠습니다.
+          </p>
+
+          <p>
+            이때마다 정보를 더 추가하면 화면은 복잡해졌지만, 무엇을 먼저 확인해야 하는지는
+            오히려 흐려지기도 했습니다. 보여줄 데이터의 목록보다 사용자가 화면을 통해 끝내야
+            할 업무를 구체적으로 정하는 편이 필요한 정보와 기능을 나누는 데 더 도움이
+            됐습니다.
+          </p>
+
+          <h2>통계 화면에서 뒤늦게 드러난 기준</h2>
+
+          <p>
+            통계 화면에서는 이런 문제가 더 분명하게 드러났습니다. 특정 통계에서 테스트
+            데이터를 제외해달라는 요청이 생긴 적이 있습니다. 화면이나 API에 조건 하나를
+            추가하면 되는 일처럼 보였습니다.
+          </p>
+
+          <p>
+            하지만 무엇을 테스트 데이터로 볼지, 실제 데이터와 어떻게 구분할지, 테스트가
+            끝난 뒤 삭제할지 보관할지가 정해져 있지 않았습니다. 필요할 때마다 테스트 계정을
+            만들고 관리한 탓에 이미 쌓인 데이터를 일관된 기준으로 분류하기도 어려웠습니다.
+          </p>
+
+          <p>
+            기준이 없는 상태에서 화면만 수정하면 한 통계에서는 계정 이름으로 제외하고,
+            다른 통계에서는 이메일 패턴으로 제외할 수 있습니다. 작은 예외 조건이 쌓일수록
+            같은 데이터가 화면마다 다른 의미를 갖고, 숫자를 확인하기 위해 다시 원천 데이터를
+            조회하게 됩니다.
+          </p>
+
+          <h2>화면보다 먼저 함께 정해야 했던 것</h2>
+
+          <p>
+            여러 정보를 한 화면에서 편하게 보고 싶다는 요구도 자주 있었습니다. 실제 업무에
+            필요한 요구였지만, 요청이 생길 때마다 정보를 추가하면 핵심 정보와 참고 정보의
+            경계가 흐려졌습니다. 서로 다른 데이터를 조합하는 코드도 점점 복잡해졌습니다.
+          </p>
+
+          <p>
+            이 경험 이후에는 어드민 화면을 만들기 전에 세 가지를 먼저 확인하는 편이
+            유용했습니다.
+          </p>
+
+          <ul>
+            <li>이 화면에서 어떤 업무를 끝내야 하는가</li>
+            <li>어떤 데이터를 포함하고 제외할 것인가</li>
+            <li>정상 흐름에서 벗어난 데이터는 어디에서 처리할 것인가</li>
+          </ul>
+
+          <p>
+            이 질문들이 정리되면 테스트 데이터도 화면마다 임시로 제외하기보다, 생성할 때
+            구분하고 통계에 공통 기준을 적용하는 방향으로 이야기할 수 있었습니다. 화면에
+            필요한 정보와 별도의 흐름으로 분리할 정보도 비교하기 쉬워졌습니다.
+          </p>
+
+          <p class="article-note">
+            어드민의 복잡도는 UI 자체보다, 운영자가 끝내야 할 업무와 데이터의 기준이
+            충분히 공유되지 않은 상태에서 시작되는 경우가 많았습니다.
+          </p>
+
+          <h2>어드민도 제품의 일부로 보기</h2>
+
+          <p>
+            모든 운영 요구를 처음부터 예상할 수는 없습니다. 실제 운영이 시작되면 새로운
+            조회 조건과 예외가 생기고, 어드민도 계속 달라집니다. 처음부터 완벽하게 만드는
+            것보다 새로운 요구를 같은 기준에서 검토할 수 있게 하는 편이 중요했습니다.
+          </p>
+
+          <p>
+            어드민은 데이터를 보여주는 부가 기능이라기보다 팀의 운영 방식과 데이터 기준이
+            실제로 드러나는 제품의 일부에 가까웠습니다. 화면을 만들기 전에 업무와 데이터의
+            의미를 함께 정하는 일도 어드민 설계에 포함되어야 했습니다.
+          </p>
+        </div>
+
+        <footer class="article-footer">
+          <p>만들면서 생긴 질문과 판단을 기록합니다. 상황에 따라 다른 답이 있을 수 있습니다.</p>
+          <a href="./early-interface-decision-tool.html">이전 글: 초기 화면을 의사결정 도구로 활용하기 →</a>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>
