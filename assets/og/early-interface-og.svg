@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f7f7f3"/>
+  <rect x="0" y="0" width="24" height="630" fill="#123d37"/>
+  <rect x="56" y="54" width="1088" height="522" rx="20" fill="none" stroke="#123d37" stroke-opacity=".2"/>
+
+  <text x="84" y="105" fill="#1f6f68" font-family="Arial, Apple SD Gothic Neo, sans-serif"
+        font-size="18" font-weight="700" letter-spacing="2.1">WRITING / PRODUCT DECISION 01</text>
+
+  <text x="84" y="212" fill="#171717" font-family="Arial, Apple SD Gothic Neo, sans-serif"
+        font-size="59" font-weight="700">
+    <tspan x="84" dy="0">초기 화면을</tspan>
+    <tspan x="84" dy="76">의사결정 도구로 활용하기</tspan>
+  </text>
+
+  <text x="87" y="403" fill="#62615c" font-family="Arial, Apple SD Gothic Neo, sans-serif"
+        font-size="23">
+    <tspan x="87" dy="0">화면을 먼저 보며 일정·디자인·데이터 구조를</tspan>
+    <tspan x="87" dy="34">같은 기준에서 검토합니다.</tspan>
+  </text>
+
+  <g transform="translate(780 154) scale(.78)">
+    <g fill="none" stroke="#1f6f68" stroke-width="3">
+      <circle cx="20" cy="38" r="7"/>
+      <circle cx="60" cy="90" r="7"/>
+      <circle cx="18" cy="148" r="7"/>
+      <circle cx="92" cy="180" r="7"/>
+      <path d="M26 40 C110 42 110 74 178 74"/>
+      <path d="M67 91 C120 91 126 112 178 112"/>
+      <path d="M25 148 C95 148 110 150 178 150"/>
+      <path d="M99 180 C134 180 146 188 178 188"/>
+      <rect x="178" y="34" width="252" height="194" rx="14"/>
+      <line x1="205" y1="78" x2="396" y2="78"/>
+      <line x1="205" y1="116" x2="352" y2="116"/>
+      <rect x="205" y="147" width="74" height="50" rx="6"/>
+      <rect x="294" y="147" width="102" height="50" rx="6"/>
+    </g>
+    <text x="222" y="266" fill="#1f6f68" font-family="Menlo, Consolas, monospace"
+          font-size="16" font-weight="700">IDEA → VISIBLE</text>
+  </g>
+
+  <text x="84" y="540" fill="#1f6f68" font-family="Arial, Apple SD Gothic Neo, sans-serif"
+        font-size="18">JSIM · Product Systems Engineer</text>
+</svg>
